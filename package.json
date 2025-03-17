@@ -1,0 +1,21 @@
+{
+  "name": "agentic-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "dev": "tsx index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "openai": "^4.87.3"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "vitest": "^3.0.8"
+  }
+}
