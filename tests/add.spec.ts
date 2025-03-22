@@ -1,5 +1,5 @@
+import add from '../add'
 import { describe, it, expect } from 'vitest'
-import { add } from '../add'
 
 describe('add function', () => {
     it('returns the sum of multiple numbers', () => {

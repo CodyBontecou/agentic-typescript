@@ -4,12 +4,13 @@ import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-export const writeFileContent = (filePath: string, content: string): void => {
+export const writeFileContent = (filePath: string, content: string): string => {
     try {
         const absolutePath = path.resolve(__dirname, '..', filePath)
         fs.writeFileSync(absolutePath, content, 'utf8')
-        console.log(`File ${filePath} updated successfully`)
+        return `File ${filePath} updated successfully`
     } catch (error) {
         console.error(`Error writing to file ${filePath}:`, error)
+        return `Error writing to file ${filePath}:` + error
     }
 }
