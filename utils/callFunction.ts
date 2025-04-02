@@ -6,8 +6,7 @@ export const callFunction = async (name: string, args: any) => {
     // Function map to store all available functions
     const functionMap: Record<string, (args: any) => Promise<any>> = {
         writeFileContent: async args => {
-            await writeFileContent(args.filePath, args.content)
-            return 'File written successfully'
+            return await writeFileContent(args.filePath, args.content)
         },
 
         runTests: async () => {
